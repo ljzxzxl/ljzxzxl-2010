@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>runcode</title>
+</head>
+
+<body>
+<script language="JavaScript" type="text/JavaScript">
+//运行文本域代码
+function runEx(cod1) {
+ cod=document.all(cod1)
+ var code=cod.value;
+ if (code!=""){
+ var newwin=window.open('','',''); //打开一个窗口并赋给变量newwin。
+ newwin.opener = null // 防止代码对论谈页面修改
+ newwin.document.write(code); //向这个打开的窗口中写入代码code，这样就实现了运行代码功能。
+ newwin.document.close();
+}
+}
+</script>
+<textarea name="textarea" cols="60" rows="10" id="rn01"><font color="red">加入HTML代码</font></textarea>
+<br><INPUT onclick="runEx('rn01')" type="button" value="运行代码" style="cursor:hand">&nbsp;&nbsp;[Ctrl+A 全部选择 提示：你可先修改部分代码，再按运行]
+</body>
+</html>

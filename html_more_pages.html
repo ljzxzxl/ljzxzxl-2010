@@ -1,0 +1,89 @@
+
+<!-- saved from url=(0036)http://www.texiao.cn/show.asp?id=289 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<meta content="鼠标触发型导航菜单,网页特效" name="keywords">
+<title>鼠标触发型导航菜单---网页特效站</title>
+
+<style type="text/css">
+<!--
+.ww1 {width:500px;background-color:#D1E7FC;border-top:1px solid #9EC9EC;border-left:1px solid #9EC9EC;}
+.ww1 td {border-right:1px solid #9EC9EC;border-bottom:1px solid #9EC9EC;height:28px;text-align:center;width:125px;font-size:12px;cursor:hand;}
+.ww1 td.s {border-bottom:1px solid #FFFFFF;font-weight:bold;background-color:#FFFFFF;}
+.ww2 {width:500px;border-right:1px solid #9EC9EC;border-top:none;border-left:1px solid #9EC9EC;border-bottom:1px solid #9EC9EC;font-size:12px;}
+.ww2 a:link {color:#00007f;text-decoration:none;}
+.ww2 a:visited {color:#800080;text-decoration:none;}
+.ww2 a:hover {color:#00007f;text-decoration:underline;}
+.ww2 a:active {color:#00007f;text-decoration:underline;}
+.dis {display:block}
+.undis {display:none}
+-->
+</style>
+<script>
+	function getNames(obj,name,tij)
+	{	
+		var p = document.getElementById(obj);
+		var plist = p.getElementsByTagName(tij);
+		var rlist = new Array();
+		for(i=0;i<plist.length;i++)
+		{
+			if(plist[i].getAttribute("name") == name)
+			{
+				rlist[rlist.length] = plist[i];
+			}
+		}
+		return rlist;
+	}
+
+		function butong_net(obj,name)
+		{
+			var p = obj.parentNode.getElementsByTagName("td");
+			var p1 = getNames(name,"f","div");
+			for(i=0;i<p1.length;i++)
+			{
+				if(obj==p[i])
+				{
+					p[i].className = "s";
+					p1[i].className = "dis";
+				}
+				else
+				{
+					p[i].className = "";
+					p1[i].className = "undis";
+				}
+			}
+		}
+</script>
+</head>
+
+<body><table border="0" cellpadding="0" cellspacing="0" class="ww1">
+ <tbody><tr>
+   <td class="" onmouseover="butong_net(this,&#39;butong_net1&#39;)">网页特效库</td>
+   <td onmouseover="butong_net(this,&#39;butong_net1&#39;)" class="">网页工具库1</td>
+   <td onmouseover="butong_net(this,&#39;butong_net1&#39;)" class="">网页工具库2</td>
+   <td onmouseover="butong_net(this,&#39;butong_net1&#39;)" class="s">网页工具库3</td>
+ </tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" class="ww2">
+ <tbody><tr>
+   <td height="60" align="center">
+     <div id="butong_net1">
+      <div class="undis" name="f">
+	   <a href="http://www.texiao.cn/background/index.htm" target="_blank">背景按钮特效</a>    <a href="http://www.texiao.cn/navigation/index.htm" target="_blank">导航菜单特效</a>    <a href="http://www.texiao.cn/img/index.htm" target="_blank">网页图片特效</a>    <a href="http://www.texiao.cn/text/index.htm" target="_blank">网页文本特效</a>    <a href="http://www.texiao.cn/other/index.htm" target="_blank">另类网页特效</a>
+	  </div>
+      <div class="undis" name="f">
+	   <a href="http://www.texiao.cn/tool/html_edit.htm" target="_blank">在线html编辑器</a>    <a href="http://www.texiao.cn/tool/css_edit/index.htm" target="_blank">在线CSS编辑器</a>    <a href="http://www.texiao.cn/tool/web_yanse.htm" target="_blank">网页颜色选择器</a>    <a href="http://www.texiao.cn/tool/gdtys.htm" target="_blank">滚动条颜色生成器</a>
+	  </div>
+      <div class="undis" name="f">
+	   <a href="http://www.texiao.cn/tool/open.htm" target="_blank">弹出窗口生成器</a>    <a href="http://www.texiao.cn/tool/ymxg.htm" target="_blank">页面过渡效果生成器</a>    <a href="http://www.texiao.cn/tool/jiamijiemi.htm" target="_blank">网页加密解密工具</a>
+      </div>
+      <div class="dis" name="f">
+	   <a href="http://www.texiao.cn/tool/fjtzh.htm" target="_blank">文本繁简体转换工具</a>    <a href="http://www.texiao.cn/tool/hzzpy.htm" target="_blank">汉字转换成拼音工具</a>    <a href="http://www.texiao.cn/tool/wenzijiami.htm" target="_blank">文字加密解密工具</a>
+      </div>
+     </div>
+   </td>
+ </tr>
+</tbody></table>
+
+
+</body></html>

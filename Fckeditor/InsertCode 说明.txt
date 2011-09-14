@@ -1,0 +1,52 @@
+
+为了可以使用插入代码功能，需要在相应的页面加入CSS代码(insertcode.css)，和下面的Js代码。
+
+========================================================
+
+比如在文章模板页链接Css文件：
+<link rel="stylesheet" type="text/css" href="{sys:installdir}inc/editor/fckeditor/insertCode.css">
+或者直接把css代码拷贝到模板的css文件中。
+
+并在文章模板页加入以下的js代码。
+
+=========================================================
+
+
+
+<script>
+//以下是实现复制的代码，请自己添加
+//javascript
+function $(id)
+{
+	return document.getElementById(id);
+}
+
+//复制文本
+function copyIdText(id)
+{
+  copy( $(id).innerText,$(id) );
+}
+function copyIdHtml(id)
+{
+  copy( $(id).innerHTML,$(id) );
+}
+
+function copy(txt,obj)
+{       
+   if(window.clipboardData) 
+   {        
+        window.clipboardData.clearData();        
+        window.clipboardData.setData("Text", txt);
+        alert("复制成功！")
+        if(obj.style.display != 'none'){
+	  var rng = document.body.createTextRange();
+	  rng.moveToElementText(obj);
+	  rng.scrollIntoView();
+	  rng.select();
+	  rng.collapse(false);  
+       }
+   }
+   else
+    alert("请选中文本，使用 Ctrl+C 复制!");
+}
+</script>

@@ -1,0 +1,28 @@
+<div id=demo style=overflow:hidden;height:90;width:150;background:#;color:#ffffff>
+<div id=demo1>
+<a href="http://www.chinamobile.com/" target="_blank">测试滚动文字一<br/></a>
+<a href="http://www.cnuninet.com/" target="_blank">测试滚动文字二<br/></a>
+<a href="http://www.chinatelecom.com.cn/" target="_blank">测试滚动文字三<br/></a>
+<a href="http://www.chinasatcom.com/" target="_blank">测试滚动文字四<br/></a>
+<a href="http://www.crc.net.cn/" target="_blank">测试滚动文字五<br/></a>
+<a href="http://www.cnc.net.cn/" target="_blank">测试滚动文字六<br/></a>
+</div>
+<div id=demo2></div>
+</div>
+
+<script language="javascript">
+<!--
+var speed=50
+demo2.innerHTML=demo1.innerHTML
+function Marquee(){
+if(demo2.offsetTop-demo.scrollTop<=0)
+demo.scrollTop-=demo1.offsetHeight
+else{
+demo.scrollTop++
+}
+}
+var MyMar=setInterval(Marquee,speed)
+demo.onmouseover=function() {clearInterval(MyMar)}
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+-->
+</script>
