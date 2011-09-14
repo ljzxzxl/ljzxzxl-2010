@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>用户注册</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<SCRIPT type="text/javascript">
+function Form_Submit()
+{
+if(regForm.userNumber.value=="")
+{
+alert("用户名不能为空!");
+return false;
+}
+else if(regForm.userpassWord.value=="")
+{
+alert("密码不能为空!");
+return false;
+}
+else if(regForm.userpassWord.value!=regForm.reuserpassWord.value)
+{
+alert("两次输入的密码不一致!");
+return false;
+}
+return true;
+}
+</SCRIPT>
+</head>
+<body>
+<FORM id="register" name="regForm" method="post" action="">
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#0099FF">
+<tr>
+<td align="center" valign="middle" bgcolor="#FFFFFF">用户注册</td>
+</tr>
+<tr>
+<td align="center" valign="middle" bgcolor="#FFFFFF">用户账号：
+<input name="userNumber" type="text" id="usernumber" size="15"></td>
+</tr>
+<tr>
+<td align="center" valign="middle" bgcolor="#FFFFFF">用户密码：
+<input name="userPassWord" type="text" id="userpassWord" size="15"></td>
+</tr>
+<tr>
+<td align="center" valign="middle" bgcolor="#FFFFFF">确认密码：
+<input name="reuserPassWord" type="text" id="reuserpassWord" size="15"></td>
+</tr>
+<tr>
+<td align="center" valign="middle" bgcolor="#FFFFFF">电子邮箱：
+<input name="email" type="text" id="email" size="15"></td>
+</tr>
+<tr>
+<td align="center" valign="middle" bgcolor="#FFFFFF"><input type="button" name="Submit" value="提交" onClick="Form_Submit()"></td>
+</tr>
+</table>
+</FORM>
+</body>
+</html>

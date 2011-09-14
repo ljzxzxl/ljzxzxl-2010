@@ -1,0 +1,3 @@
+﻿访问来源文本记录：
+Date='2011-03-28 17:20:29' IP='127.0.0.1' From='http://localhost/2010/count/' Address='扮缁'
+Date='2011-03-28 17:25:29' IP='127.0.0.1' From='http://localhost/2010/count/' Address='扮缁'

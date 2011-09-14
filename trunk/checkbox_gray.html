@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>JS控制大类复选框选中后小类变灰 - www.webdm.cn</title>
+  <script language="JavaScript">
+  <!--
+function selectKind(the){
+var obj = the;
+var container = document.getElementById("kind_" + obj.name);
+for(var i=0;i<container.getElementsByTagName("input").length;i++){
+container.getElementsByTagName("input")[i].disabled = obj.checked;
+}
+
+}
+  //-->
+  </script>
+	</head>
+<body>
+<input type='checkbox' value="1001" name=aa onclick="selectKind(this)">1001
+<div id="kind_aa">
+<input type='checkbox' value="100101" name=aa>100101  
+<input type='checkbox' value="100102" name=aa>100102
+<input type='checkbox' value="100103" name=aa>100103
+<input type='checkbox' value="100104" name=aa>100104
+</div>
+<input type='checkbox' value="1002" name=bb onclick="selectKind(this)">1002
+<div id="kind_bb">
+<input type='checkbox' value="100201" name=bb>100201  
+<input type='checkbox' value="100202" name=bb>100202
+<input type='checkbox' value="100203" name=bb>100203
+<input type='checkbox' value="100204" name=bb>100204
+</div>
+
+<br />
+<p><a href="http://www.webdm.cn">网页代码站</a> - 最专业的代码下载网站 - 致力为中国站长提供有质量的代码！</p>
+</body>
+</html>

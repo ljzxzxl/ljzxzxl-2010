@@ -1,0 +1,37 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script language="JavaScript"> 
+function check(obj){
+       var f = document.forms[0];
+       if(f.elements[obj.name][0].checked)
+	   document.getElementById('aa').style.display = "block";
+       else document.getElementById('aa').style.display = "none";
+}
+    </script> 
+  </HEAD> 
+  <BODY> 
+<form>
+<table>
+<tr> 
+<td> 
+&nbsp; 是否显示 </td> 
+<td>&nbsp; <input type="radio" name="link" value="1" checked onClick="check(this);">是 <input type="radio" name="link" value="0" onClick="check(this);">否 
+</td> 
+</tr> 
+<tr> 
+<td> 
+&nbsp; 地址 </td> 
+<td>&nbsp;  <input type="text" name="title0" class="InputStyle_1"> </td> 
+</tr> 
+<tr > 
+<td> 
+&nbsp;&nbsp;内容 
+</td> 
+<td>&nbsp;&nbsp; 
+<input type="text" name="aa" id="aa" class="InputStyle_1"> </td> 
+</tr>
+</table>
+</form>
+  </BODY> 
+</HTML>

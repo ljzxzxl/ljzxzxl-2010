@@ -1,0 +1,63 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>javascript checkbox全选 反选 取消全部</title> 
+<script language="javascript" type="text/javascript"> 
+<!-- 
+//全选 
+function test() 
+{ 
+for(i=0;i<document.MyForm.elements.length;i++) 
+{ 
+   f =document.MyForm.elements[i]; 
+   if(f.checked==false) 
+    { 
+     f.checked=true; 
+    } 
+} 
+} 
+//反选 
+function ftest() 
+{ 
+for(i=0;i<document.MyForm.elements.length;i++) 
+{ 
+   f =document.MyForm.elements[i]; 
+   if(f.checked==false) 
+    { 
+     f.checked=true; 
+    } 
+    else 
+    { 
+    f.checked=false; 
+    } 
+} 
+} 
+//取消全部 
+function CancelAll() 
+{ 
+for(i=0;i<document.MyForm.elements.length;i++) 
+{ 
+   f =document.MyForm.elements[i]; 
+   if(f.checked==true) 
+    { 
+     f.checked=false; 
+    } 
+} 
+} 
+--> 
+</script> 
+</head> 
+
+<body> 
+<form name="MyForm"> 
+<input type="checkbox" name="MyCheckbox1" title="ASP" value="ASP" />ASP 
+<input type="checkbox" name="MyCheckbox2" title=".Net" value=".Net" />.Net 
+<input type="checkbox" name="MyCheckbox3" title="Jsp" value="Jsp" />Jsp 
+<input type="checkbox" name="MyCheckbox4" title="Css" value="Css" />Css 
+<input type="checkbox" name="MyCheckbox5" title="Html" value="Html" />Html 
+<input type="checkbox" name="MyCheckbox6" title="全选" value="全选" onclick="test()" />全选 
+<input type="checkbox" name="MyCheckbox7" title="反选" value="反选" onclick="ftest()" />反选 
+<input type="checkbox" name="MyCheckbox8" title="反选" value="取消全部" onclick="CancelAll()" />取消全部 
+</form> 
+</body> 
+</html>
