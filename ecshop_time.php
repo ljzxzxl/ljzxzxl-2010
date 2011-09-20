@@ -19,7 +19,7 @@ $time = gmtime();
 }
 elseif ($time <= 0)
 {
-return ”;
+return '';
 }
 $time += ($timezone * 3600);
 return date($format, $time);
@@ -50,9 +50,16 @@ echo "<br/>";
 //ecshop过期判断
 $day = getdate();
 echo "<hr/>";
-$cur_date = local_mktime(23, 59, 59, $day['mon'], $day['mday'], $day['year']);
+//$cur_date = local_mktime(23, 59, 59, $day['mon'], $day['mday'], $day['year']);
 echo $cur_date;
 echo "123";
+echo "<br/>";
+
+//时间转换
+echo "<br/>";
+echo strtotime('now');
+echo "<br/>";
+echo date("Y-m-d H:i:s",strtotime('now') + 8 * 3600);
 
 
 ?>
