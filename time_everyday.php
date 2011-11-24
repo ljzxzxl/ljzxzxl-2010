@@ -1,5 +1,5 @@
 <?php
 echo time();
-echo date();
-
+echo "<br/>";
+echo date("Y-m-d");
 ?>
