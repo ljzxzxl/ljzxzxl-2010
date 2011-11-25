@@ -1,6 +1,6 @@
 /*
 SQLyog Community Edition- MySQL GUI v6.16 RC2
-MySQL - 5.0.19-nt : Database - xh_maain
+MySQL - 5.0.19-nt : Database - test
 *********************************************************************
 */
 
@@ -8,9 +8,9 @@ MySQL - 5.0.19-nt : Database - xh_maain
 
 /*!40101 SET SQL_MODE=''*/;
 
-create database if not exists `xh_maain`;
+create database if not exists `test`;
 
-USE `xh_maain`;
+USE `test`;
 
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
