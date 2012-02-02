@@ -50,5 +50,6 @@
 		<td>&nbsp;</td>
 		<td colspan="2"><input type="submit" value="登录" /><a href="register.php">点击注册</a></td>
 	</tr>
+</table>
 </form>
 </center>
